@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.705) 0%,rgba(46, 46, 46, 0.705) 100%),
+    url('assets/background/wallpaper.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+
+.img-logo {
+    width: 130px;
+    height: 125px; 
+}
+
+.navi_below {
+    padding-top: 5rem;
+}
+
+.col {
+    margin-bottom: 1.5rem;
+}
+
+.img_logo {
+    max-width: 6.5rem;
+    max-height: 6rem;
+    margin: 1rem;
+}
+
+.footer{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: auto;
+    height: 14rem;
+    color: rgb(44, 44, 44);
+}
+
+#copyright {
+    color: rgb(218, 218, 218);
+    text-align: center;
+}
+
+.link_logo {
+    padding: 1px;
+    height: 1.8rem;
+    height: 1.8rem;
+    border-radius: 25%;
+    background-color: white;
+}
+
+.link_hover :hover {
+    opacity: 40%;
+}
+
+
+.skills {
+    background-color: white;
+    text-align: center;
+    
+}
+
+.projects {
+    background-color: rgb(212, 212, 212);
+    text-align: center;
+}
+
+.about {
+    color: white;
+}
+
+.abt {
+    padding-top: 15%;
+    background-color: transparent;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.navbar {
+    font-size: 125%;
+}
+
+.heading_name {
+    font-size: 4rem;
+    font-weight: 100;
+    text-shadow: 3px 3px 15px black;
+}
+
+.heading_text1 {
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-shadow: 3px 3px 15px black;
+}
+
+.heading_text2 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-shadow: 3px 3px 15px black;
+}
