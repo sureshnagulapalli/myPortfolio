@@ -7,8 +7,8 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.705) 0%,rgba(46, 46, 46, 0.705) 100%),
-    url('assets/background/wallpaper.jpg');
+    background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.603) 0%,rgba(65, 65, 65, 0.603) 100%),
+    url('assets/background/wallpaper.png');
     background-size: 100%;
     background-attachment: fixed;
   }
@@ -22,26 +22,22 @@ body {
     padding-top: 5rem;
 }
 
-.col {
-    margin-bottom: 1.5rem;
-}
 
 .img_logo {
     max-width: 6.5rem;
     max-height: 6rem;
-    margin: 1rem;
+    margin: 1.8rem;
 }
 
 .footer{
     background-color: rgb(255, 255, 255);
     margin-bottom: auto;
-    height: 14rem;
+    height: auto;
     color: rgb(44, 44, 44);
 }
 
 #copyright {
     color: rgb(218, 218, 218);
-    text-align: center;
 }
 
 .link_logo {
@@ -59,13 +55,11 @@ body {
 
 .skills {
     background-color: white;
-    text-align: center;
     
 }
 
 .projects {
     background-color: rgb(212, 212, 212);
-    text-align: center;
 }
 
 .about {
@@ -102,3 +96,44 @@ body {
     font-weight: 300;
     text-shadow: 3px 3px 15px black;
 }
+
+@media screen and (max-width: 850px) {
+        
+    .heading_name {
+        font-size: 3rem;
+    }
+    .heading_text1 {
+        font-size: 1rem;
+    }
+    .heading_text2 {
+        font-size: 1.45rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar {
+        font-size: 80%;
+    }
+
+    .abt {
+        padding-top: 15%;
+    }
+    .heading_name {
+        font-size: 3rem;
+    }
+
+    .heading_text1 {
+        display: none;
+    }
+
+    .heading_text2 {
+         font-size: 1.2rem;
+        }
+}
+
+@media screen and (max-height: 433px) {
+    #more_info {
+        display: none;
+    }
+}
+
