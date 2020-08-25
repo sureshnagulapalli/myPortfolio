@@ -23,11 +23,12 @@ export class SkillsComponent implements OnInit {
     {img: "assets/logos/Flask.png", alt: "Flask" },
     {img: "assets/logos/Git.png", alt: "Git" },
     {img: "assets/logos/Heroku.png", alt: "Heroku" },
-    {img: "assets/logos/Heroku.png", alt: "GraphQL"},
-    {img: "assets/logos/Heroku.png", alt: "REST API"},
-    {img: "assets/logos/Heroku.png", alt: "Tensorflow"},
-    {img: "assets/logos/Node.jpg", alt: "Scikit learning"},
-    {img: "assets/logos/Heroku.png", alt: "NumPy"},
+    {img: "assets/logos/GraphQL.png", alt: "GraphQL"},
+    {img: "assets/logos/rest-api.png", alt: "REST API"},
+    {img: "assets/logos/tensorflow.jpg", alt: "Tensorflow"},
+    {img: "assets/logos/scikit-learn.png", alt: "Scikit learning"},
+    {img: "assets/logos/numpy.png", alt: "NumPy"},
+    {img: "assets/logos/matplotlib.png", alt: "MatPlotLib"},
   ]
 
   s = " ";
