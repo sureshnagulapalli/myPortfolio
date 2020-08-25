@@ -1,29 +1,18 @@
 
 <div class="skills text-center">
 <div class="navi_below container">
-    <h4>Skill Set</h4>
+    <h4>My Skills</h4>
+    <h5>I'm sure to complete given a task in any of the following technologies</h5>
     <br>
-    <div class='row row-cols-2 row-cols-md-3 row-cols-lg-4'>
-
-        <div class='col text-center'><img src='assets/logos/C.png' alt='c' class="img_logo"></div>
-        <div class='col text-center'><img src='assets/logos/Java.jpg' alt='Java' class="img_logo"></div>
-        <div class='col text-center'><img src='assets/logos/HTML.png' alt='HTML' class="img_logo"></div>
-        <div class='col text-center'><img src="assets/logos/Css.png" alt="css" class="img_logo"></div>
-    
-        <div class='col text-center'><img src='assets/logos/JavaScript.png' alt='JavaScript' class="img_logo"></div>
-        <div class='col text-center'><img src='assets/logos/angular.png' alt='Angular' class="img_logo"></div>
-        <div class='col text-center'><img src='assets/logos/Spring.png' alt='Spring' class="img_logo"></div>
-        <div class='col text-center'><img src='assets/logos/Bootstrap.jpg' alt='Bootstrap' class="img_logo"></div>
-    
-        <div class='col text-center'><img src='assets/logos/Node.jpg' alt='Node.Js' class="img_logo"></div>
-        <div class='col text-center'><img src='assets/logos/MySql.png' alt='MySql' class="img_logo"></div>
-        <div class='col text-center'><img src='assets/logos/mongoDb.png' alt='MongoDb' class="img_logo"></div>
-        <div class='col text-center'><img src="assets/logos/Python.jpg" alt='Python' class="img_logo"></div>
-        
-        <div class='col text-center'><img src='assets/logos/Flask.png' alt='Flask' class="img_logo"></div>
-        <div class='col text-center'><img src='assets/logos/Git.png' alt='Git' class="img_logo"></div>
-        <div class='col text-center'><img src='assets/logos/Heroku.png' alt='Heroku' class="img_logo"></div>
-        
+    <div class='row row-cols-2 row-cols-md-3 row-cols-lg-4' >
+        <div *ngFor="let skill of skills">
+            <div class='col'>
+                <img src={{skill.img}} alt={{skill.alt}} class="img_logo">   
+            </div>
+            <div style="padding-bottom: 1.5rem;">
+                <h6>{{skill.alt}}</h6>
+            </div>
+        </div>
     </div>
 </div>
 </div>

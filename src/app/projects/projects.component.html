@@ -1,18 +1,20 @@
 <div class="projects">
     <div class='navi_below container text-center'>
-        <h4 style="margin-bottom: 1%;">My Projects</h4>
-        <button [ngClass]="{'btn': true, 'btn-secondary': show, 'btn-outline-secondary': !show} " 
-            (click)='show = true' style="margin-right: 5%;" >Current Projects</button>
-        <button [ngClass]="{'btn': true ,'btn-outline-secondary': show, 'btn-secondary': !show}"
-            (click)='show=false'>Future Projects</button>
+        <h4 style="margin-bottom: 1.8%;">CHECK OUT SOME OF MY WORK</h4>
+        
+        <button 
+            [ngClass]="{'btn': true, 'btn-secondary': show, 'btn-outline-secondary': !show} " (click)='show = true' 
+            style="margin-right: 5%;" [routerLink]="['/projects', 'current']">
+            Current Projects
+        </button>
+        <button 
+            [ngClass]="{'btn': true ,'btn-outline-secondary': show, 'btn-secondary': !show}" (click)='show=false' 
+            [routerLink]="['/projects', 'future']">
+            Future Projects
+        </button>
         
         <hr>
+        <router-outlet></router-outlet>
 
-        <div *ngIf =show>
-            <app-current></app-current>
-        </div>
-        <div *ngIf =!show>
-            <app-future></app-future>
-        </div>
     </div>
 </div>

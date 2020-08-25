@@ -1,52 +1,12 @@
-<div class='row row-cols-1 row-cols-md-2 row-cols-lg-3'>
-    <div class="col">
+<div class='row row-cols-1 row-cols-md-2 row-cols-lg-3' >
+    <div class="col" *ngFor="let project of projects">
         <div class="card shadow-lg p-1 mb-5 bg-black rounded">
-            <img src="assets/project_imgs/CampR.png" class="card-img-top" alt="...">
+            <img src={{project.src}} class="card-img-top" alt="...">
             <div class="card-body">
-            <h5 class="card-title">CampR</h5>
-            <p class="card-text">A camping website built using Bootstrap, Node.js, Passport.js, and MongoDB where users can host camps.</p> 
-            <p class="card-text">Users need to be logged in to host or comment on camps.</p>
-            <a href="https://damp-dawn-57731.herokuapp.com/" class="btn btn-secondary" target="_blank">Open Project</a>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card shadow-lg p-1 mb-5 bg-black rounded">
-            <img src="assets/project_imgs/freshfood.PNG" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">FreshFood</h5>
-            <p class="card-text">FreshFood is an online food delivery website, where diet plans are provided for a subscription.</p>
-            <p class="card-text">It is an architectured frontend built using HTML and CSS.</p>
-            <a href="http://radiant-lowlands-14019.herokuapp.com/" class="btn btn-secondary" target="_blank">Open Project</a>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card shadow-lg p-1 mb-5 bg-black rounded">
-            <img src="assets/project_imgs/smart_window_blind.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Smart Window Blind using IOT</h5>
-            <p class="card-text">Smart Window blind is embedded with the Arduino board.</p>
-            <p class="card-text">With the help of this device, a regular window blind becomes smart and users can open or close the blinds with just one tap through the phone.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card shadow-lg p-1 mb-5 bg-black rounded">
-            <img src="assets/project_imgs/students_marks_prediction.png" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Student's Marks prediction using Machine Learning</h5>
-            <p class="card-text">Implemented a project which allows users to analyze students’ marks based on factors such as school, age, gender, weekly study time, past failures, and free time after school, to predict performance which will benefit students, educators, and academic institutions.</p>
-            <a href="#" class="btn btn-secondary" target="_blank">Open Project</a>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card shadow-lg p-1 mb-5 bg-black rounded">
-            <img src="assets/project_imgs/intelligent_blind_stick.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Intelligent blind stick using IOT</h5>
-                <p class="card-text">Embedded an Arduino board Integrated with an ultrasonic sensor to detect obstacles, a water sensor to detect water and a GPS tracker to send messages to the user's immediate contact, through the cloud. Wireless RF-based remote is provided to locate the cane.</p>
+            <h5 class="card-title">{{project.title}}</h5>
+            <p class="card-text">{{project.text1}}</p> 
+            <p class="card-text">{{project.text2}}</p>
+            <a href={{project.href}} class="btn btn-secondary" target="_blank">Open Project</a>
             </div>
         </div>
     </div>
