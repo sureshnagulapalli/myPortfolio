@@ -9,7 +9,7 @@ export class CurrentComponent implements OnInit {
 
   projects = [
     {
-      src: "",
+      src: "assets/project_imgs/event_management.PNG",
       title: "Event Management",
       text1: "Event Management website where users can host events and other users can book them as well",
       text2: "Built using Angular, GraphQL, Node.js, Express.js, MongoDB",

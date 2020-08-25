@@ -1,7 +1,7 @@
 <div class="projects">
     <div class='navi_below container text-center'>
         <h4 style="margin-bottom: 1.8%;">CHECK OUT SOME OF MY WORK</h4>
-        
+        <!--
         <button 
             [ngClass]="{'btn': true, 'btn-secondary': show, 'btn-outline-secondary': !show} " (click)='show = true' 
             style="margin-right: 5%;" [routerLink]="['/projects', 'current']">
@@ -15,6 +15,22 @@
         
         <hr>
         <router-outlet></router-outlet>
+        -->
 
+        <hr>
+        <div class='row row-cols-1 row-cols-md-2 row-cols-lg-3' >
+            <div class="col" *ngFor="let project of projects">
+                <div class="card shadow-lg p-1 mb-5 bg-black rounded">
+                    <img src={{project.src}} class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">{{project.title}}</h5>
+                    <p class="card-text">{{project.text1}}</p> 
+                    <p class="card-text">{{project.text2}}</p>
+                    <a href={{project.href}} class="btn btn-secondary" target="_blank" *ngIf="project.href != ''">Open Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </div>
