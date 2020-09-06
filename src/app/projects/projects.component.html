@@ -1,21 +1,6 @@
 <div class="projects">
     <div class='navi_below container text-center'>
-        <h4 style="margin-bottom: 1.8%;">CHECK OUT SOME OF MY WORK</h4>
-        <!--
-        <button 
-            [ngClass]="{'btn': true, 'btn-secondary': show, 'btn-outline-secondary': !show} " (click)='show = true' 
-            style="margin-right: 5%;" [routerLink]="['/projects', 'current']">
-            Current Projects
-        </button>
-        <button 
-            [ngClass]="{'btn': true ,'btn-outline-secondary': show, 'btn-secondary': !show}" (click)='show=false' 
-            [routerLink]="['/projects', 'future']">
-            Future Projects
-        </button>
-        
-        <hr>
-        <router-outlet></router-outlet>
-        -->
+        <h4 style="margin-bottom: 1.8%;">MY PROJECTS</h4>
 
         <hr>
         <div class='row row-cols-1 row-cols-md-2 row-cols-lg-3' >
@@ -23,10 +8,22 @@
                 <div class="card shadow-lg p-1 mb-5 bg-black rounded">
                     <img src={{project.src}} class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">{{project.title}}</h5>
+                    <h5 class="card-title text-dark">{{project.title}}</h5>
                     <p class="card-text">{{project.text1}}</p> 
                     <p class="card-text">{{project.text2}}</p>
-                    <a href={{project.href}} class="btn btn-secondary" target="_blank" *ngIf="project.href != ''">Open Project</a>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <a href={{project.href}} class="btn btn-secondary" target="_blank" *ngIf="project.href != '' && project.href != 'soon'">Open Project</a>
+                            <button disabled class="btn btn-secondary" *ngIf="project.href == 'soon'">Coming Soon</button>
+                        </div>   
+                        <div class="col">
+                            <a href={{project.github}} class="btn btn-light" target="_blank" *ngIf="project.github != ''">Source Code</a>
+                        </div>
+                    </div>
+                    <button disabled class="btn btn-secondary" *ngIf="project.href == ''">Archived</button>
+                    
+                    
                     </div>
                 </div>
             </div>

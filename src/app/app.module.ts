@@ -8,8 +8,6 @@ import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
-import { FutureComponent } from './projects/future/future.component';
-import { CurrentComponent } from './projects/current/current.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -19,9 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
     ProjectsComponent,
     AboutComponent,
     NavComponent,
-    FooterComponent,
-    FutureComponent,
-    CurrentComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
