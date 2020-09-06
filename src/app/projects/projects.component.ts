@@ -29,7 +29,7 @@ export class ProjectsComponent implements OnInit {
     title: "FreshFood",
     text1: "FreshFood is an online food delivery website, where diet plans are provided for a subscription.",
     text2: "It is an architectured frontend built using HTML and CSS.",
-    href: "http://radiant-lowlands-14019.herokuapp.com/",
+    href: "https://sureshnagulapalli.github.io/freshfood-website/",
     github: "https://github.com/sureshnagulapalli/freshfood-website"
   },
   {
