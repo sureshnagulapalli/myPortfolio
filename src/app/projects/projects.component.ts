@@ -33,7 +33,7 @@ export class ProjectsComponent implements OnInit {
     github: "https://github.com/sureshnagulapalli/freshfood-website"
   },
   {
-    src: "assets/project_imgs/smart_window_blind.jpg",
+    src: "assets/project_imgs/smart_window_blind.jpeg",
     title: "Smart Window Blind using IOT",
     text1: "Smart Window blind is embedded with the Arduino board.",
     text2: "With the help of this device, a regular window blind becomes smart and users can open or close the blinds with just one tap through the phone.",
