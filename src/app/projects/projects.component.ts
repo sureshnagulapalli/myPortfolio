@@ -17,10 +17,18 @@ export class ProjectsComponent implements OnInit {
       github: "https://github.com/sureshnagulapalli/Event-Management"
     },
     {
+      src: "assets/project_imgs/project_management.PNG",
+      title: "Project Management",
+      text1: "Project Managament is a website where users can create tasks for projects and even communicate within the project",
+      text2: "Built using Angular, Rest APIs, Spring Boot, MySQL",
+      href: "soon",
+      github: "https://github.com/sureshnagulapalli/Event-Management"
+    },
+    {
     src: "assets/project_imgs/CampR.png",
     title: "CampR",
-    text1: "A camping website built using Bootstrap, Node.js, Passport.js, and MongoDB where users can host camps.",
-    text2: "Users need to be logged in to host or comment on camps.",
+    text1: "A mobile friendly camping website for users can host camps.",
+    text2: "Built using Node.Js, Express.Js, MongoDB, Bootstrap 4",
     href: "https://damp-dawn-57731.herokuapp.com/",
     github: "https://github.com/sureshnagulapalli/Camp-website"
   },
